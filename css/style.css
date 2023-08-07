@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box; 
+font-family: 'Secular One', sans-serif;}
+
+.menu{
+    background-color: #72B6E8;
+    font-size: 1.5rem ;
+    text-align:center; 
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size:contain;
+}
+
+/**/
+/*index*/
+
+.navbar{
+    background-color: #72B6E8
+}
+.icono{
+    position: relative;
+    width:100px; 
+    height: auto;
+}
+
+/**/
+/*contacto*/
+
+.contacto{
+  padding: 5px;
+  position: fixed;
+  right: 20px;
+  bottom: 60px;
+  color: lightgreen;
+  background-color: lightgreen;
+  text-decoration: none;
+}
+
+
+/**/
+/*footer*/
+
+footer{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: gray;
+    height: auto;
+    position: relative;
+    bottom: 0;
+}
+/**/ 
+/*nosotros*/
+
+.nos{ 
+    display: flex;    
+    justify-content: center;
+    height: 40rem;  
+}
+
+.mapa{
+    display: flex;
+    justify-content: center;
+    height: 40rem;
+    
+}
+
+@media(max-width: 700px){
+    .nos{
+        display: flex;    
+    justify-content: center;
+    height: 20rem;
+    }
+    .mapa{ 
+       height: auto;
+        }
+}
+
+.text{
+    font-size: medium;
+    text-align:center; 
+}
+
+/**/
+/*infomayorista*/
+
+.pedido{
+    width: 80rem;
+    height: 15rem;
+    position: relative;
+    top: 50%;
+    left: 25%;
+}
+
+.consulta{
+    width: 40rem;
+    height: 10rem;
+    position: relative;
+}
+
+.boton{
+    width: 8rem;
+    height: 2rem;
+    position: relative;
+    top: 50%;
+    left: 25%;
+}
+
+.lista2{
+    background-color: lightgray;
+    padding: 4rem;
+    list-style-type: none;
+    justify-content: center;  
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  
+}
+
+/**/
+/*productos*/
+h2{
+    display: flex;
+    justify-content: center;
+}
+
+.productos-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: aqua;
+    justify-items: center;
+}
+@media(max-width: 700px){
+  
+ .productos-grid{ 
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    }
+    .contacto{
+        padding: 5;
+        position:fixed;
+        right: 0px;
+        bottom: 60px;
+    }
+}
+
+/**/
+
