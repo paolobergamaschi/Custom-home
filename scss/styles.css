@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Secular One", sans-serif;
+}
+* h2 {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar {
+  background-color: #72B6E8;
+  width: 100vw;
+}
+
+.icono {
+  position: relative;
+  width: 100px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.productos-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+}
+
+@media (max-width: 1200px) {
+  .productos-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+}
+@media (max-width: 700px) {
+  .productos-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .contacto {
+    padding: 5;
+    position: fixed;
+    right: 0px;
+    bottom: 60px;
+  }
+}
+.productos-grid1:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s;
+}
+
+.productos-grid2:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s;
+}
+
+.productos-grid3:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s;
+}
+
+.productos-grid4:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s;
+}
+
+.productos-grid5:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s;
+}
+
+.productos-grid6:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s;
+}
+
+.nos {
+  display: flex;
+  justify-content: center;
+  height: 40rem;
+}
+
+.mapa {
+  display: flex;
+  justify-content: center;
+  height: 40rem;
+}
+
+@media (max-width: 1200px) {
+  .nos {
+    display: flex;
+    justify-content: center;
+    height: 30rem;
+  }
+  .mapa {
+    height: auto;
+  }
+}
+@media (max-width: 700px) {
+  .nos {
+    display: flex;
+    justify-content: center;
+    height: 20rem;
+  }
+  .mapa {
+    height: auto;
+  }
+}
+.text {
+  font-size: small;
+  text-align: center;
+}
+
+.pedidoo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pedidoo .pedido {
+  width: 40rem;
+  height: 15rem;
+  text-align: start;
+}
+
+.botonpedido {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 1200px) {
+  .pedidoo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .pedidoo .pedido {
+    width: 29rem;
+    height: 10rem;
+    text-align: start;
+  }
+}
+@media (max-width: 700px) {
+  .pedidoo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .pedidoo .pedido {
+    width: 20rem;
+    height: 10rem;
+    text-align: start;
+  }
+}
+.contacto {
+  padding: 5px;
+  position: fixed;
+  right: 20px;
+  bottom: 60px;
+  color: lightgreen;
+  background-color: lightgreen;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.lista2 {
+  background-color: rgb(228, 228, 228);
+  padding: 4rem;
+  list-style-type: none;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.lista2 .botonpedido {
+  display: flex;
+  justify-content: center;
+}
+
+.consulta {
+  width: 40rem;
+  height: 10rem;
+  position: relative;
+}
+
+@media (max-width: 1200px) {
+  .consulta {
+    width: 30rem;
+    height: 10rem;
+    position: relative;
+  }
+}
+@media (max-width: 700px) {
+  .consulta {
+    width: 20rem;
+    height: 10rem;
+    position: relative;
+  }
+}
+footer {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: gray;
+  height: auto;
+  position: relative;
+  bottom: 0;
+  text-decoration: none;
+  width: 100vw;
+  margin-top: 0px;
+}
+footer .redes-facebook {
+  text-decoration: none;
+}
+footer .redes-instagram {
+  text-decoration: none;
+}
+
+.redes {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+}
+.redes .redes-facebook {
+  width: 1rem;
+}
+.redes .redes-instagram {
+  width: 1rem;
+}
+
+.redes-facebook {
+  background-color: rgb(25, 121, 231);
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.redes-instagram {
+  background-color: rgb(220, 27, 178);
+  text-decoration: none;
+  font-weight: normal;
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,33 @@
+.productos-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
+@media(max-width: 1200px){
+    .productos-grid{ 
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        }
+}
+@media(max-width: 700px){
+  
+    .productos-grid{ 
+       display: grid;
+       grid-template-columns: 1fr;
+       gap: 1rem;
+       }
+       .contacto{
+           padding: 5;
+           position:fixed;
+           right: 0px;
+           bottom: 60px;
+       }
+    }
+
+    @for $numero from 1 through 6 {
+    .productos-grid#{$numero}:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s;
+      }
+    }
