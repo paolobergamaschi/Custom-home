@@ -9,10 +9,17 @@
   display: flex;
   justify-content: center;
 }
+* h3 {
+  display: flex;
+  justify-content: center;
+  text-decoration: underline;
+}
+* .tachado {
+  text-decoration: line-through;
+}
 
 .navbar {
   background-color: #72B6E8;
-  width: 100vw;
 }
 
 .icono {
@@ -28,11 +35,32 @@
   justify-items: center;
 }
 
+.productos-grid-index {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  gap: 1rem;
+}
+.productos-grid-index .card {
+  font-size: medium;
+  max-width: 40%;
+}
+
 @media (max-width: 1200px) {
   .productos-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
+  }
+  .productos-grid-index {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 1rem;
+  }
+  .productos-grid-index .card {
+    font-size: smaller;
+    max-width: 40%;
   }
 }
 @media (max-width: 700px) {
@@ -83,11 +111,25 @@
   justify-content: center;
   height: 40rem;
 }
+.nos img {
+  width: 60%;
+  max-width: 600px;
+  height: 100%;
+}
 
 .mapa {
   display: flex;
   justify-content: center;
-  height: 40rem;
+}
+.mapa iframe {
+  width: 60%;
+  max-width: 600px;
+  height: 100%;
+}
+
+.text {
+  font-size: small;
+  text-align: center;
 }
 
 @media (max-width: 1200px) {
@@ -96,33 +138,53 @@
     justify-content: center;
     height: 30rem;
   }
-  .mapa {
-    height: auto;
-  }
-  .text {
-    font-size: smaller;
-    text-align: center;
+  .mapa iframe {
+    width: 50%;
+    max-width: 500px;
+    height: 100%;
   }
 }
+.text {
+  font-size: smaller;
+  text-align: center;
+}
+
 @media (max-width: 700px) {
   .nos {
     display: flex;
     justify-content: center;
-    height: 20rem;
+    height: 20%;
   }
   .mapa {
     height: auto;
   }
+  .mapa iframe {
+    width: 70%;
+    max-width: 400px;
+    height: 100%;
+  }
+}
+@media (max-width: 700px) and (max-width: 400px) {
+  .nos {
+    display: flex;
+    justify-content: center;
+    height: 20%;
+  }
+  .mapa {
+    height: auto;
+  }
+  .mapa iframe {
+    width: 70%;
+    max-width: 400px;
+    height: 100%;
+  }
+}
+@media (max-width: 700px) {
   .text {
     font-size: smaller;
     text-align: center;
   }
 }
-.text {
-  font-size: small;
-  text-align: center;
-}
-
 .pedidoo {
   display: flex;
   justify-content: center;
@@ -174,6 +236,12 @@
   border-radius: 5px;
 }
 
+.btn-im {
+  text-align: right;
+  justify-content: space-between;
+  align-items: right;
+}
+
 .lista2 {
   background-color: rgb(228, 228, 228);
   padding: 4rem;
@@ -208,6 +276,13 @@
     position: relative;
   }
 }
+@media (max-width: 400px) {
+  .consulta {
+    width: 15rem;
+    height: 7rem;
+    position: relative;
+  }
+}
 footer {
   font-family: Arial, Helvetica, sans-serif;
   background-color: gray;
@@ -215,8 +290,7 @@ footer {
   position: relative;
   bottom: 0;
   text-decoration: none;
-  width: 100vw;
-  margin-top: 0px;
+  margin-top: 300px;
 }
 footer .redes-facebook {
   text-decoration: none;

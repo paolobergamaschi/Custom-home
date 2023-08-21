@@ -8,8 +8,12 @@
   text-decoration: none;
   border-radius: 5px;
 }
-
-
+ 
+.btn-im{
+    text-align: right;
+    justify-content: space-between;
+    align-items: right;
+}
 .lista2{
     background-color: rgb(228, 228, 228);
     padding: 4rem;
@@ -45,5 +49,14 @@
         width: 20rem;
         height: 10rem;
         position: relative;
-    }}
+    }
+}
+
+    @media(max-width: 400px){ 
+        .consulta{
+            width: 15rem;
+            height: 7rem;
+            position: relative;
+        }
+    }
     

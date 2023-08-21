@@ -3,11 +3,34 @@
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
 }
+
+.productos-grid-index{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    gap: 1rem;
+    .card{
+        font-size:medium ;
+        max-width: 40%;
+    }
+   
+    }
+
 @media(max-width: 1200px){
     .productos-grid{ 
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 1rem;
+        }
+        .productos-grid-index{
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-items: center;
+            gap: 1rem;
+            .card{
+                font-size: smaller;
+                max-width: 40%;
+            }            
         }
 }
 @media(max-width: 700px){
